@@ -244,15 +244,14 @@ http://placementsindia.blogspot.com/2007/12/solutions-to-few-google-top-intervie
 27. Categorize them by color, pattern, long/short, type. Give each shirt a number and in those categories link the key to that number.
 	For ex:
 	Color table:
-		red --> 4
-		brown --> 3
-		white --> 1
-		black --> 2
+	- red --> 4
+	- brown --> 3
+	- white --> 1
+	- black --> 2
 
-28.
-	Easy: split into 3 3 2
-	Weigh the 2 3s, balance, weigh the 2 separately
-	Otherwise, split the 3 into 1 1 and same method
+28. Easy: split into 3 3 2
+	- Weigh the 2 3s, balance, weigh the 2 separately
+	- Otherwise, split the 3 into 1 1 and same method
 
 29. hmmm, not C
 
