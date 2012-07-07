@@ -1,0 +1,48 @@
+<project name="Terminal" default="all" basedir=".">
+  <description>
+    Sale Terminal
+  </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="tst-dir" location="test"/>
+  <property name="TALK" value="true"/>
+
+  <path id="classpath.base"/>
+  <path id="classpath.test">
+    <pathelement location="${basedir}/lib/junit.jar"/>
+    <pathelement location="${src}"/>
+    <pathelement location="${tst-dir}"/>
+    <path refid="classpath.base"/>
+  </path>
+
+  <target name="clean" description="clean up">
+    <!-- Delete the ${build} directory trees -->
+    <delete dir="${build}"/>
+    <delete verbose="${TALK}">
+      <fileset dir="${tst-dir}" includes="**/*.class"/>
+      <fileset dir="${src}" includes="**/*.class"/>
+    </delete>
+  </target>
+
+  <target name="compile" depends="clean">
+    <javac srcdir="${src}" verbose="${TALK}">
+    </javac>
+  </target>
+
+
+  <target name="compile-test" depends="compile">
+    <javac srcdir="${tst-dir}" verbose="${TALK}">
+      <classpath refid="classpath.test"/>
+    </javac>
+  </target>
+
+  <target name="test" depends="compile-test">
+    <junit>
+      <classpath refid="classpath.test"/>
+      <formatter type="brief" usefile="false"/>
+      <test name="TerminalTest"/>
+    </junit>
+  </target>
+
+  <target name="all" depends="test"/>
+</project>
