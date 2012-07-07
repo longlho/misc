@@ -44,7 +44,6 @@ http://placementsindia.blogspot.com/2007/12/solutions-to-few-google-top-intervie
 						break
 
 4. Card games:
-
 	- Card class w/ # and suit
 	- Deck of cards w/ a stack of cards and shuffle method
 	- Game class controls the rules
@@ -83,13 +82,10 @@ http://placementsindia.blogspot.com/2007/12/solutions-to-few-google-top-intervie
 10. `ACK` and `NAK`, have to look at Networks again
 
 11. - `final` is a keyword for class, method, variable to avoid changes. final class cannot be subclassed, final method cannot be override, final variable cannot be changed
-
 	- `finalize()` s a method that gets called right before class object is destroyed or collected by garbage
-
 	- `finally` in try/catch. Any code within finally will be executed after try/catch is finished.
 
 12. - Multithreaded programming: allows multiple threads to exist in the same process. They share resources but execute independently so codes don't have to be run sequentially while they can work in parallel.
-
 	- deadlock: while 2 or more threads are waiting for each other to release a resource. None of them can move on since they each hold a piece of lock and both need all pieces to move on. 
 	Example: threads transferring money. T1 is transferring from acc A to B while T2 is transferring from acc B to A. T1 has locked A and needs lock for B while T2 has locked B and needs lock for A. They're deadlocked.
 
