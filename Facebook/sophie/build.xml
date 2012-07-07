@@ -1,0 +1,6 @@
+<project>  
+<property name="keyword" value="sophie"/>  
+<javac srcdir="." destdir="." excludes="test/"/>  
+<echo message="java -Xmx1024M ${keyword} $*" file="${keyword}"/>  
+<chmod file="${keyword}" perm="a+x"/>  
+</project>
