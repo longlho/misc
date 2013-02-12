@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	.logo {
+		width: 450px;
+		height: 450px;
+		background-color: #921600;
+		border-radius: 30px;
+		position: absolute;
+	}
+	.heart {
+		width: 220px;
+		height: 300px;
+		background-color: white;
+		position: absolute;
+		margin: 40px 70px;
+		border-top-left-radius: 110px;
+		border-top-right-radius: 110px;
+	}
+	.heart.left {
+		-webkit-transform: rotate(-50deg);
+	}
+	.heart.right {
+		margin: 40px 0 0 160px;
+		-webkit-transform: rotate(50deg);
+	}
+	.i {	
+		background-color: #921600;
+		width: 70px;
+		height: 200px;
+		position: relative;
+		margin: 20px auto;
+		border-top-left-radius: 35px;
+		border-top-right-radius: 35px;
+	}
+	.dot {
+		width: 70px;
+		height: 70px;
+		border-radius: 35px;
+		position: relative;
+		margin: 110px auto;
+		margin-bottom: 20px;
+		background-color: #921600;
+	}
+	.signal.left {
+		width: 90px;
+		height: 90px;
+		border-radius: 60px;
+		border-left: 15px solid #921600;
+		position: relative;
+		margin: -320px 140px;
+		background-color: transparent;
+	}
+	.signal.left:after {
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+		border-left: 15px solid #921600;
+		position: absolute;
+		margin: -15px -70px;
+		background-color: transparent;
+		display: block;
+		content: '';
+	}
+	.signal.right {
+		width: 90px;
+		height: 90px;
+		border-radius: 60px;
+		border-right: 15px solid #921600;
+		position: relative;
+		margin: 230px 200px;
+		background-color: transparent;
+	}
+	.signal.right:after {
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+		border-right: 15px solid #921600;
+		position: absolute;
+		margin: -15px 30px;
+		background-color: transparent;
+		display: block;
+		content: '';
+	}
+	</style>
+</head>
+<body>
+	<div class='logo'>
+		<div class='heart left'></div>
+		<div class='heart right'></div>
+		<div class='dot'></div>
+		<div class='i'></div>
+		<div class='signal left'></div>
+		<div class='signal right'></div>
+	</div>
+</body>
+</html>
