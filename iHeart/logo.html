@@ -10,78 +10,75 @@
 		position: absolute;
 	}
 	.heart {
-		width: 220px;
-		height: 300px;
+		width: 50%;
+		height: 66%;
 		background-color: white;
 		position: absolute;
-		margin: 40px 70px;
-		border-top-left-radius: 110px;
-		border-top-right-radius: 110px;
+		margin: 10% 12.5%;
+		border-top-left-radius: 49%;
+		border-top-right-radius: 49%;
 	}
 	.heart.left {
 		-webkit-transform: rotate(-50deg);
 	}
 	.heart.right {
-		margin: 40px 0 0 160px;
+		margin: 10% 0 0 37.5%;
 		-webkit-transform: rotate(50deg);
 	}
 	.i {	
 		background-color: #921600;
-		width: 70px;
-		height: 200px;
+		width: 17%;
+		height: 50%;
 		position: relative;
-		margin: 20px auto;
+		margin: 5% auto;
 		border-top-left-radius: 35px;
 		border-top-right-radius: 35px;
 	}
 	.dot {
-		width: 70px;
-		height: 70px;
-		border-radius: 35px;
+		width: 17%;
+		height: 17%;
+		border-radius: 50%;
 		position: relative;
-		margin: 110px auto;
-		margin-bottom: 20px;
+		margin-top: 25%;
+		margin-left: auto;
+		margin-right: auto;
 		background-color: #921600;
 	}
-	.signal.left {
-		width: 90px;
-		height: 90px;
-		border-radius: 60px;
-		border-left: 15px solid #921600;
+	.signal {
+		width: 20%;
+		height: 20%;
+		border-radius: 50%;
 		position: relative;
-		margin: -320px 140px;
 		background-color: transparent;
+	}
+	.signal:after {
+		width: 133%;
+		height: 133%;
+		border-radius: 50%;
+		position: absolute;
+		background-color: transparent;
+		display: block;
+		content: '';
+	}
+	.signal.left {
+		float: left;
+		margin: -78% 28%;
+		border-left: 15px solid #921600;
 	}
 	.signal.left:after {
-		width: 120px;
-		height: 120px;
-		border-radius: 60px;
+		float: left;
+		margin: -18% -80%;
 		border-left: 15px solid #921600;
-		position: absolute;
-		margin: -15px -70px;
-		background-color: transparent;
-		display: block;
-		content: '';
 	}
 	.signal.right {
-		width: 90px;
-		height: 90px;
-		border-radius: 60px;
+		float: right;
+		margin: -78% 28%;
 		border-right: 15px solid #921600;
-		position: relative;
-		margin: 230px 200px;
-		background-color: transparent;
 	}
 	.signal.right:after {
-		width: 120px;
-		height: 120px;
-		border-radius: 60px;
+		float: right;
+		margin: -18% 28%;
 		border-right: 15px solid #921600;
-		position: absolute;
-		margin: -15px 30px;
-		background-color: transparent;
-		display: block;
-		content: '';
 	}
 	</style>
 </head>
